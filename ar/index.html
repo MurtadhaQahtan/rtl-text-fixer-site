@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RTL Text Fixer – إصلاح الحروف العربية المتقطعة والمعكوسة في البرامج لويندوز</title>
+<meta name="description" content="الحروف العربية تظهر متقطعة ومعكوسة في بريمير أو أفتر إفكتس أو يونيتي أو بلندر؟ برنامج RTL Text Fixer لويندوز يحوّل النص العربي والفارسي والأردي والعبري ليظهر بشكل صحيح في البرامج التي لا تدعم الكتابة من اليمين إلى اليسار.">
+<link rel="canonical" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/ar/">
+<link rel="alternate" hreflang="en" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/">
+<link rel="alternate" hreflang="ar" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/ar/">
+<link rel="alternate" hreflang="fa" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/fa/">
+<link rel="alternate" hreflang="ur" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/ur/">
+<link rel="alternate" hreflang="he" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/he/">
+<link rel="alternate" hreflang="tr" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/tr/">
+<link rel="alternate" hreflang="ru" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/ru/">
+<link rel="alternate" hreflang="es" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/es/">
+<link rel="alternate" hreflang="fr" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/fr/">
+<link rel="alternate" hreflang="de" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/de/">
+<link rel="alternate" hreflang="pt-BR" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/pt-br/">
+<link rel="alternate" hreflang="hi" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/hi/">
+<link rel="alternate" hreflang="x-default" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RTL Text Fixer – إصلاح الحروف العربية المتقطعة والمعكوسة في البرامج لويندوز">
+<meta property="og:description" content="الحروف العربية تظهر متقطعة ومعكوسة في بريمير أو أفتر إفكتس أو يونيتي أو بلندر؟ برنامج RTL Text Fixer لويندوز يحوّل النص العربي والفارسي والأردي والعبري ليظهر بشكل صحيح في البرامج التي لا تدعم الكتابة من اليمين إلى اليسار.">
+<meta property="og:url" content="https://murtadhaqahtan.github.io/rtl-text-fixer-site/ar/">
+<meta property="og:image" content="https://murtadhaqahtan.github.io/rtl-text-fixer-site/img/og.png">
+<meta property="og:locale" content="ar">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/rtl-text-fixer-site/img/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="/rtl-text-fixer-site/img/icon-192.png">
+<style>:root{--b:#0067c0;--bg:#fff;--fg:#1b1b1b;--mut:#5a5a5a;--line:#e3e3e3}
+*{box-sizing:border-box}body{font-family:"Segoe UI",system-ui,-apple-system,"Noto Sans","Noto Sans Arabic","Noto Sans Hebrew",Tahoma,sans-serif;max-width:860px;margin:0 auto;padding:16px 20px 40px;line-height:1.65;color:var(--fg);background:var(--bg)}
+h1{font-size:2rem;line-height:1.25;margin:.4em 0;color:var(--b)}h2{margin-top:2em;color:var(--b);border-bottom:1px solid var(--line);padding-bottom:.2em}
+h3{display:inline;font-size:1.05rem;margin:0}header img{border-radius:22%}.lead{font-size:1.15rem}
+.price,.note{color:var(--mut);font-size:.95rem}.badge img{display:block;margin:16px 0 4px}
+.langs{font-size:.9rem;color:var(--mut);padding:6px 0;border-bottom:1px solid var(--line)}footer .langs{border:0}
+code,kbd{font-family:Consolas,"Cascadia Mono",monospace;background:#f2f4f7;border-radius:4px;padding:1px 5px;unicode-bidi:isolate}
+kbd{border:1px solid #c9ced6;border-bottom-width:2px}
+table{border-collapse:collapse;width:100%;font-size:1.02rem}th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:start;vertical-align:top}th{background:#f5f8fc}
+td:last-child{color:var(--mut);font-size:.9rem}
+details{border-bottom:1px solid var(--line);padding:10px 0}summary{cursor:pointer}details p{margin:.5em 0 0}
+.shot{max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;margin-top:12px}
+.cta{margin-top:2em}footer{margin-top:3em;border-top:1px solid var(--line);font-size:.92rem}
+a{color:var(--b)}
+@media (max-width:600px){h1{font-size:1.55rem}td,th{padding:6px}}
+.demo{max-width:100%;height:auto;display:block;margin:10px 0;border-radius:10px}
+.pending{background:#fff7e0;border:1px solid #f0d58c;border-radius:8px;padding:10px 14px;display:inline-block;margin:14px 0 4px}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/ar/#page",
+   "url": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/ar/",
+   "name": "RTL Text Fixer – إصلاح الحروف العربية المتقطعة والمعكوسة في البرامج لويندوز",
+   "description": "الحروف العربية تظهر متقطعة ومعكوسة في بريمير أو أفتر إفكتس أو يونيتي أو بلندر؟ برنامج RTL Text Fixer لويندوز يحوّل النص العربي والفارسي والأردي والعبري ليظهر بشكل صحيح في البرامج التي لا تدعم الكتابة من اليمين إلى اليسار.",
+   "inLanguage": "ar",
+   "dateModified": "2026-10-23",
+   "about": {
+    "@id": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/#app"
+   },
+   "mainEntity": {
+    "@id": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/#app"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/#app",
+   "name": "RTL Text Fixer",
+   "description": "الحروف العربية تظهر متقطعة ومعكوسة في بريمير أو أفتر إفكتس أو يونيتي أو بلندر؟ برنامج RTL Text Fixer لويندوز يحوّل النص العربي والفارسي والأردي والعبري ليظهر بشكل صحيح في البرامج التي لا تدعم الكتابة من اليمين إلى اليسار.",
+   "url": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/ar/",
+   "sameAs": [
+    "https://github.com/MurtadhaQahtan/rtl-text-fixer-app"
+   ],
+   "applicationCategory": "UtilitiesApplication",
+   "applicationSubCategory": "Arabic reshaper / right-to-left text converter",
+   "operatingSystem": "Windows 10 (version 1809 or later), Windows 11",
+   "processorRequirements": "x64, ARM64",
+   "softwareVersion": "1.0",
+   "inLanguage": [
+    "en",
+    "ar",
+    "fa",
+    "ur",
+    "he",
+    "tr",
+    "ru",
+    "es",
+    "fr",
+    "de",
+    "pt-BR",
+    "hi"
+   ],
+   "featureList": [
+    "وصل الحروف (أول الكلمة ووسطها وآخرها والمنفصلة) ودمج اللام ألف",
+    "ترتيب مرئي من اليسار إلى اليمين مع بقاء الأرقام والكلمات الإنجليزية وعلامات الترقيم في مكانها، وقلب الأقواس",
+    "اكتشاف نوع الكتابة واللغة تلقائياً، وتنبيه إذا كان النص مُشكَّلاً مسبقاً",
+    "الحركات: إبقاء أو حذف أو أشكال منفصلة للبرامج التي لا تضع الحركات",
+    "نص متعدد الأسطر مع خيار عكس ترتيب الأسطر وتقسيم الأسطر الطويلة",
+    "«إلغاء التشكيل» يعيد النص المُشكَّل إلى نص عادي قابل للتحرير",
+    "اختصار عام للحافظة (Ctrl+Shift+R) وأيقونة في شريط المهام وخيار التشغيل مع ويندوز",
+    "واجهة بـ12 لغة منها العربية والفارسية والأردية والعبرية باتجاه من اليمين إلى اليسار",
+    "يعمل دون إنترنت: بلا حساب أو إعلانات أو تتبع"
+   ],
+   "image": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/img/icon-192.png",
+   "screenshot": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/img/shot-en.png",
+   "author": {
+    "@type": "Person",
+    "name": "Murtadha Qahtan",
+    "url": "https://github.com/MurtadhaQahtan"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/ar/#faq",
+   "inLanguage": "ar",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "لماذا تظهر الحروف العربية متقطعة ومعكوسة في بريمير برو وكيف أصلحها؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "البرامج التي لا تدعم تشكيل الحروف العربية والاتجاه ثنائي الاتجاه ترسم كل حرف بشكله المنفصل من اليسار إلى اليمين. الإصدارات الحديثة من Premiere Pro فيها محرك نصوص للشرق الأوسط يمكن تفعيله من إعدادات الكتابة؛ وإذا لم يكن متاحاً في إصدارك أو القالب، الصق النص في RTL Text Fixer (أو انسخه واضغط Ctrl+Shift+R) ثم الصق النتيجة في العنوان."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "كيف أكتب عربي في أفتر إفكتس بدون تقطيع الحروف؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "فعّل محرك النصوص الخاص بالشرق الأوسط وجنوب آسيا إن كان متوفراً في إصدارك. وإلا حوّل النص بـRTL Text Fixer والصقه في طبقة النص: تُوصل الحروف ويُرتَّب النص فيظهر صحيحاً."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "النص العربي يظهر مقلوباً في يونيتي، ما الحل؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "مكونات النص القياسية في Unity لا تشكّل الحروف العربية. حوّل النص بـRTL Text Fixer والصقه في حقل Text أو TextMeshPro مع خط يحتوي على أشكال العرض العربية."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "كيف أكتب بالعربي في بلندر؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "كائنات النص ثلاثية الأبعاد في Blender لا تشكّل الحروف العربية. حوّل النص بـRTL Text Fixer والصقه، واختر خطاً يحتوي على أشكال العرض العربية مثل Noto Sans Arabic."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "هل تبقى الأرقام والكلمات الإنجليزية بالترتيب الصحيح؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "نعم. يطبّق البرنامج خوارزمية يونيكود ثنائية الاتجاه، فتبقى الأرقام مثل 2025 والكلمات الإنجليزية والأقواس في مكانها الصحيح."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "هل يمكن إعادة النص المُشكَّل إلى نص عادي؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "نعم، باستخدام وضع «إلغاء التشكيل»، أو بالضغط على الاختصار مرة أخرى مباشرة بعد التحويل لاستعادة النص الأصلي."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "هل يرسل البرنامج نصي إلى أي جهة؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "لا. يعمل دون إنترنت بالكامل، ولا يحتوي على تتبع، ولا يحفظ النص الذي تحوّله."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "من أين أحصل عليه وكم سعره؟",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "سيكون RTL Text Fixer تطبيقاً مدفوعاً في متجر مايكروسوفت لويندوز 10 و11. صفحة المتجر لم تُنشر بعد، وسنضيف الرابط هنا فور نشرها."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<nav class="langs" aria-label="لغات أخرى"><a href="/rtl-text-fixer-site/" hreflang="en" lang="en">English</a> · <b>العربية</b> · <a href="/rtl-text-fixer-site/fa/" hreflang="fa" lang="fa">فارسی</a> · <a href="/rtl-text-fixer-site/ur/" hreflang="ur" lang="ur">اردو</a> · <a href="/rtl-text-fixer-site/he/" hreflang="he" lang="he">עברית</a> · <a href="/rtl-text-fixer-site/tr/" hreflang="tr" lang="tr">Türkçe</a> · <a href="/rtl-text-fixer-site/ru/" hreflang="ru" lang="ru">Русский</a> · <a href="/rtl-text-fixer-site/es/" hreflang="es" lang="es">Español</a> · <a href="/rtl-text-fixer-site/fr/" hreflang="fr" lang="fr">Français</a> · <a href="/rtl-text-fixer-site/de/" hreflang="de" lang="de">Deutsch</a> · <a href="/rtl-text-fixer-site/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="/rtl-text-fixer-site/hi/" hreflang="hi" lang="hi">हिन्दी</a></nav>
+<header>
+<img src="/rtl-text-fixer-site/img/icon-192.png" width="96" height="96" alt="RTL Text Fixer">
+<h1>اجعل النص العربي يظهر متصلاً وبالترتيب الصحيح في البرامج التي لا تدعم العربية</h1>
+<p class="lead"><b>RTL Text Fixer</b> برنامج لويندوز ١٠ و١١. كثير من برامج المونتاج والموشن جرافيك والثري دي ومحركات الألعاب والتصميم تعرض العربية حروفاً منفصلة بترتيب معكوس. الصق نصك في البرنامج وانسخ النتيجة: تُوصل الحروف (أشكال العرض في يونيكود) ويُرتَّب النص بالترتيب المرئي، فيظهر في البرنامج كما يجب أن يُقرأ. أو انسخ النص من أي مكان، اضغط <kbd dir="ltr">Ctrl+Shift+R</kbd> ثم الصق.</p>
+<p class="pending">الإصدار في متجر مايكروسوفت قريباً — سيُضاف رابط المتجر هنا عند النشر.</p>
+</header>
+<main>
+<section><h2>قبل وبعد</h2>
+<img class="demo" src="/rtl-text-fixer-site/img/demo-ar.png" loading="lazy" alt="مرحباً بكم في Adobe Premiere Pro 2025">
+<img class="demo" src="/rtl-text-fixer-site/img/demo-ar2.png" loading="lazy" alt="السلام عليكم">
+<img class="demo" src="/rtl-text-fixer-site/img/demo-fa.png" loading="lazy" alt="این متن فارسی در After Effects درست است">
+<img class="demo" src="/rtl-text-fixer-site/img/demo-ur.png" loading="lazy" alt="اردو متن اب Unity میں درست ہے">
+<p class="note">محاكاة لطريقة عرض برنامج لا يدعم الكتابة من اليمين إلى اليسار (الحروف تُرسم من اليسار إلى اليمين بلا وصل). الأحمر: النص كما هو. الأخضر: النص نفسه بعد RTL Text Fixer — ناتج محرك البرنامج الفعلي.</p></section>
+<section><h2>طريقة الاستخدام</h2><ol>
+<li>الصق نصك أو اكتبه في المربع. يكتشف البرنامج نوع الكتابة واللغة تلقائياً.</li>
+<li>تعرض المعاينة بالضبط كيف ستظهر النتيجة في برنامج لا يدعم العربية. اضغط <b>نسخ النتيجة</b> والصقها في مشروعك.</li>
+<li>بدون فتح النافذة: انسخ النص في أي برنامج، اضغط <kbd dir="ltr">Ctrl+Shift+R</kbd> (قابل للتغيير) ثم الصق. اضغط الاختصار مرة أخرى لاستعادة النص الأصلي.</li>
+</ol>
+<img class="shot" src="/rtl-text-fixer-site/img/shot-ar.png" width="1266" height="773" loading="lazy" alt="نافذة RTL Text Fixer بواجهة عربية: النص على اليمين ومعاينة النص المُشكَّل والخيارات">
+</section>
+<section><h2>اللغات المدعومة</h2><p><b>اللغات المكتوبة بالحرف العربي</b> (وصل الحروف وإعادة الترتيب): العربية والفارسية والأردية والكردية (السورانية) والبشتوية والسندية والأويغورية — كل الحروف الـ76 التي لها أشكال متصلة في يونيكود، ومنها پ چ ژ گ ک ی و ٹ ڈ ڑ ں ہ ھ ے، مع دمج اللام ألف لا لأ لإ لآ. <b>العبرية واليديشية</b> (إعادة ترتيب فقط). تبقى الأرقام والكلمات الإنجليزية داخل النص بالترتيب الصحيح (خوارزمية يونيكود ثنائية الاتجاه).</p></section>
+<section><h2>الميزات</h2><ul>
+<li>وصل الحروف (أول الكلمة ووسطها وآخرها والمنفصلة) ودمج اللام ألف</li>
+<li>ترتيب مرئي من اليسار إلى اليمين مع بقاء الأرقام والكلمات الإنجليزية وعلامات الترقيم في مكانها، وقلب الأقواس</li>
+<li>اكتشاف نوع الكتابة واللغة تلقائياً، وتنبيه إذا كان النص مُشكَّلاً مسبقاً</li>
+<li>الحركات: إبقاء أو حذف أو أشكال منفصلة للبرامج التي لا تضع الحركات</li>
+<li>نص متعدد الأسطر مع خيار عكس ترتيب الأسطر وتقسيم الأسطر الطويلة</li>
+<li>«إلغاء التشكيل» يعيد النص المُشكَّل إلى نص عادي قابل للتحرير</li>
+<li>اختصار عام للحافظة (Ctrl+Shift+R) وأيقونة في شريط المهام وخيار التشغيل مع ويندوز</li>
+<li>واجهة بـ12 لغة منها العربية والفارسية والأردية والعبرية باتجاه من اليمين إلى اليسار</li>
+<li>يعمل دون إنترنت: بلا حساب أو إعلانات أو تتبع</li>
+</ul></section>
+<section><h2>القيود</h2><ul>
+<li>ويندوز 10 (الإصدار 1809 أو أحدث) وويندوز 11 فقط.</li>
+<li>الحروف التي ليس لها أشكال متصلة في يونيكود لا يمكن لأي برنامج وصلها، مثل ڵ ڕ ێ الكردية وبعض حروف البشتوية؛ تظهر منفصلة.</li>
+<li>يجب أن يحتوي الخط المستخدم في برنامجك على أشكال العرض العربية (Arial وTahoma وSegoe UI تحتويها).</li>
+<li>النتيجة للعرض فقط. إذا قسّم البرنامج السطر الطويل بنفسه ستظهر الأسطر بترتيب خاطئ — استخدم خيار تقسيم الأسطر.</li>
+<li>البرنامج يشكّل الحروف ولا يترجم.</li>
+</ul></section>
+<section id="faq"><h2>أسئلة شائعة</h2>
+<details open><summary><h3>لماذا تظهر الحروف العربية متقطعة ومعكوسة في بريمير برو وكيف أصلحها؟</h3></summary><p>البرامج التي لا تدعم تشكيل الحروف العربية والاتجاه ثنائي الاتجاه ترسم كل حرف بشكله المنفصل من اليسار إلى اليمين. الإصدارات الحديثة من Premiere Pro فيها محرك نصوص للشرق الأوسط يمكن تفعيله من إعدادات الكتابة؛ وإذا لم يكن متاحاً في إصدارك أو القالب، الصق النص في RTL Text Fixer (أو انسخه واضغط Ctrl+Shift+R) ثم الصق النتيجة في العنوان.</p></details>
+<details open><summary><h3>كيف أكتب عربي في أفتر إفكتس بدون تقطيع الحروف؟</h3></summary><p>فعّل محرك النصوص الخاص بالشرق الأوسط وجنوب آسيا إن كان متوفراً في إصدارك. وإلا حوّل النص بـRTL Text Fixer والصقه في طبقة النص: تُوصل الحروف ويُرتَّب النص فيظهر صحيحاً.</p></details>
+<details open><summary><h3>النص العربي يظهر مقلوباً في يونيتي، ما الحل؟</h3></summary><p>مكونات النص القياسية في Unity لا تشكّل الحروف العربية. حوّل النص بـRTL Text Fixer والصقه في حقل Text أو TextMeshPro مع خط يحتوي على أشكال العرض العربية.</p></details>
+<details open><summary><h3>كيف أكتب بالعربي في بلندر؟</h3></summary><p>كائنات النص ثلاثية الأبعاد في Blender لا تشكّل الحروف العربية. حوّل النص بـRTL Text Fixer والصقه، واختر خطاً يحتوي على أشكال العرض العربية مثل Noto Sans Arabic.</p></details>
+<details open><summary><h3>هل تبقى الأرقام والكلمات الإنجليزية بالترتيب الصحيح؟</h3></summary><p>نعم. يطبّق البرنامج خوارزمية يونيكود ثنائية الاتجاه، فتبقى الأرقام مثل 2025 والكلمات الإنجليزية والأقواس في مكانها الصحيح.</p></details>
+<details open><summary><h3>هل يمكن إعادة النص المُشكَّل إلى نص عادي؟</h3></summary><p>نعم، باستخدام وضع «إلغاء التشكيل»، أو بالضغط على الاختصار مرة أخرى مباشرة بعد التحويل لاستعادة النص الأصلي.</p></details>
+<details open><summary><h3>هل يرسل البرنامج نصي إلى أي جهة؟</h3></summary><p>لا. يعمل دون إنترنت بالكامل، ولا يحتوي على تتبع، ولا يحفظ النص الذي تحوّله.</p></details>
+<details open><summary><h3>من أين أحصل عليه وكم سعره؟</h3></summary><p>سيكون RTL Text Fixer تطبيقاً مدفوعاً في متجر مايكروسوفت لويندوز 10 و11. صفحة المتجر لم تُنشر بعد، وسنضيف الرابط هنا فور نشرها.</p></details>
+</section>
+</main>
+<footer>
+<p><a href="/rtl-text-fixer-site/privacy.html">سياسة الخصوصية</a> · الدعم: <a href="mailto:hibari@mail.grokbot.com">hibari@mail.grokbot.com</a> · <a href="https://github.com/MurtadhaQahtan/rtl-text-fixer-app">GitHub</a></p>
+<p class="note">بيانات التشكيل والاتجاه مأخوذة من قاعدة بيانات محارف يونيكود (الإصدار 15.1).</p>
+<nav class="langs"><a href="/rtl-text-fixer-site/" hreflang="en" lang="en">English</a> · <b>العربية</b> · <a href="/rtl-text-fixer-site/fa/" hreflang="fa" lang="fa">فارسی</a> · <a href="/rtl-text-fixer-site/ur/" hreflang="ur" lang="ur">اردو</a> · <a href="/rtl-text-fixer-site/he/" hreflang="he" lang="he">עברית</a> · <a href="/rtl-text-fixer-site/tr/" hreflang="tr" lang="tr">Türkçe</a> · <a href="/rtl-text-fixer-site/ru/" hreflang="ru" lang="ru">Русский</a> · <a href="/rtl-text-fixer-site/es/" hreflang="es" lang="es">Español</a> · <a href="/rtl-text-fixer-site/fr/" hreflang="fr" lang="fr">Français</a> · <a href="/rtl-text-fixer-site/de/" hreflang="de" lang="de">Deutsch</a> · <a href="/rtl-text-fixer-site/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="/rtl-text-fixer-site/hi/" hreflang="hi" lang="hi">हिन्दी</a></nav>
+</footer>
+</body>
+</html>

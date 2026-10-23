@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RTL Text Fixer – תיקון עברית הפוכה בתוכנות ללא תמיכה מימין לשמאל (Windows)</title>
+<meta name="description" content="עברית מופיעה הפוכה ב-Premiere, After Effects, Unity או Blender? RTL Text Fixer ל-Windows מסדר טקסט עברי (וגם ערבי, פרסי ואורדו) כך שיוצג נכון בתוכנות שאינן תומכות בכתיבה מימין לשמאל.">
+<link rel="canonical" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/he/">
+<link rel="alternate" hreflang="en" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/">
+<link rel="alternate" hreflang="ar" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/ar/">
+<link rel="alternate" hreflang="fa" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/fa/">
+<link rel="alternate" hreflang="ur" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/ur/">
+<link rel="alternate" hreflang="he" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/he/">
+<link rel="alternate" hreflang="tr" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/tr/">
+<link rel="alternate" hreflang="ru" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/ru/">
+<link rel="alternate" hreflang="es" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/es/">
+<link rel="alternate" hreflang="fr" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/fr/">
+<link rel="alternate" hreflang="de" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/de/">
+<link rel="alternate" hreflang="pt-BR" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/pt-br/">
+<link rel="alternate" hreflang="hi" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/hi/">
+<link rel="alternate" hreflang="x-default" href="https://murtadhaqahtan.github.io/rtl-text-fixer-site/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RTL Text Fixer – תיקון עברית הפוכה בתוכנות ללא תמיכה מימין לשמאל (Windows)">
+<meta property="og:description" content="עברית מופיעה הפוכה ב-Premiere, After Effects, Unity או Blender? RTL Text Fixer ל-Windows מסדר טקסט עברי (וגם ערבי, פרסי ואורדו) כך שיוצג נכון בתוכנות שאינן תומכות בכתיבה מימין לשמאל.">
+<meta property="og:url" content="https://murtadhaqahtan.github.io/rtl-text-fixer-site/he/">
+<meta property="og:image" content="https://murtadhaqahtan.github.io/rtl-text-fixer-site/img/og.png">
+<meta property="og:locale" content="he">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/rtl-text-fixer-site/img/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="/rtl-text-fixer-site/img/icon-192.png">
+<style>:root{--b:#0067c0;--bg:#fff;--fg:#1b1b1b;--mut:#5a5a5a;--line:#e3e3e3}
+*{box-sizing:border-box}body{font-family:"Segoe UI",system-ui,-apple-system,"Noto Sans","Noto Sans Arabic","Noto Sans Hebrew",Tahoma,sans-serif;max-width:860px;margin:0 auto;padding:16px 20px 40px;line-height:1.65;color:var(--fg);background:var(--bg)}
+h1{font-size:2rem;line-height:1.25;margin:.4em 0;color:var(--b)}h2{margin-top:2em;color:var(--b);border-bottom:1px solid var(--line);padding-bottom:.2em}
+h3{display:inline;font-size:1.05rem;margin:0}header img{border-radius:22%}.lead{font-size:1.15rem}
+.price,.note{color:var(--mut);font-size:.95rem}.badge img{display:block;margin:16px 0 4px}
+.langs{font-size:.9rem;color:var(--mut);padding:6px 0;border-bottom:1px solid var(--line)}footer .langs{border:0}
+code,kbd{font-family:Consolas,"Cascadia Mono",monospace;background:#f2f4f7;border-radius:4px;padding:1px 5px;unicode-bidi:isolate}
+kbd{border:1px solid #c9ced6;border-bottom-width:2px}
+table{border-collapse:collapse;width:100%;font-size:1.02rem}th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:start;vertical-align:top}th{background:#f5f8fc}
+td:last-child{color:var(--mut);font-size:.9rem}
+details{border-bottom:1px solid var(--line);padding:10px 0}summary{cursor:pointer}details p{margin:.5em 0 0}
+.shot{max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;margin-top:12px}
+.cta{margin-top:2em}footer{margin-top:3em;border-top:1px solid var(--line);font-size:.92rem}
+a{color:var(--b)}
+@media (max-width:600px){h1{font-size:1.55rem}td,th{padding:6px}}
+.demo{max-width:100%;height:auto;display:block;margin:10px 0;border-radius:10px}
+.pending{background:#fff7e0;border:1px solid #f0d58c;border-radius:8px;padding:10px 14px;display:inline-block;margin:14px 0 4px}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/he/#page",
+   "url": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/he/",
+   "name": "RTL Text Fixer – תיקון עברית הפוכה בתוכנות ללא תמיכה מימין לשמאל (Windows)",
+   "description": "עברית מופיעה הפוכה ב-Premiere, After Effects, Unity או Blender? RTL Text Fixer ל-Windows מסדר טקסט עברי (וגם ערבי, פרסי ואורדו) כך שיוצג נכון בתוכנות שאינן תומכות בכתיבה מימין לשמאל.",
+   "inLanguage": "he",
+   "dateModified": "2026-10-23",
+   "about": {
+    "@id": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/#app"
+   },
+   "mainEntity": {
+    "@id": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/#app"
+   }
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/#app",
+   "name": "RTL Text Fixer",
+   "description": "עברית מופיעה הפוכה ב-Premiere, After Effects, Unity או Blender? RTL Text Fixer ל-Windows מסדר טקסט עברי (וגם ערבי, פרסי ואורדו) כך שיוצג נכון בתוכנות שאינן תומכות בכתיבה מימין לשמאל.",
+   "url": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/he/",
+   "sameAs": [
+    "https://github.com/MurtadhaQahtan/rtl-text-fixer-app"
+   ],
+   "applicationCategory": "UtilitiesApplication",
+   "applicationSubCategory": "Arabic reshaper / right-to-left text converter",
+   "operatingSystem": "Windows 10 (version 1809 or later), Windows 11",
+   "processorRequirements": "x64, ARM64",
+   "softwareVersion": "1.0",
+   "inLanguage": [
+    "en",
+    "ar",
+    "fa",
+    "ur",
+    "he",
+    "tr",
+    "ru",
+    "es",
+    "fr",
+    "de",
+    "pt-BR",
+    "hi"
+   ],
+   "featureList": [
+    "סדר תצוגה משמאל לימין עם מספרים, מילים באנגלית ופיסוק במקום הנכון",
+    "היפוך סוגריים",
+    "ניקוד: השארה, הסרה",
+    "זיהוי אוטומטי של הכתב",
+    "ריבוי שורות, היפוך סדר השורות וגלישת שורות",
+    "ביטול תיקון — חזרה לטקסט רגיל",
+    "קיצור מקשים ללוח (Ctrl+Shift+R) ואייקון במגש",
+    "ממשק ב-12 שפות, כולל עברית מימין לשמאל",
+    "עובד ללא אינטרנט, ללא חשבון, פרסומות או מעקב"
+   ],
+   "image": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/img/icon-192.png",
+   "screenshot": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/img/shot-en.png",
+   "author": {
+    "@type": "Person",
+    "name": "Murtadha Qahtan",
+    "url": "https://github.com/MurtadhaQahtan"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://murtadhaqahtan.github.io/rtl-text-fixer-site/he/#faq",
+   "inLanguage": "he",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "למה עברית מופיעה הפוכה ב-Unity ואיך מתקנים?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "רכיבי הטקסט הסטנדרטיים של Unity אינם מסדרים טקסט מימין לשמאל. העבירו את הטקסט דרך RTL Text Fixer והדביקו את התוצאה בשדה Text או TextMeshPro."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "איך כותבים עברית ב-Premiere או After Effects בלי שתתהפך?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "בגרסאות חדשות אפשר להפעיל את מנוע הטקסט למזרח התיכון בהגדרות. אם זה לא אפשרי בגרסה או בתבנית שלכם, המירו את הטקסט ב-RTL Text Fixer והדביקו אותו."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "עברית הפוכה ב-Blender — מה עושים?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "אובייקטי טקסט ב-Blender אינם מסדרים עברית. הדביקו את הטקסט שהומר ב-RTL Text Fixer."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "האם מספרים ומילים באנגלית נשארים בסדר הנכון?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "כן, לפי האלגוריתם הדו־כיווני של Unicode, כולל סוגריים."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "האם הטקסט שלי נשלח לאנשהו?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "לא. האפליקציה עובדת ללא אינטרנט ואינה שומרת את הטקסט."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "איפה משיגים את האפליקציה?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "RTL Text Fixer תהיה אפליקציה בתשלום ב-Microsoft Store. דף החנות עדיין לא פורסם; הקישור יתווסף כאן מיד עם הפרסום."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<nav class="langs" aria-label="שפות נוספות"><a href="/rtl-text-fixer-site/" hreflang="en" lang="en">English</a> · <a href="/rtl-text-fixer-site/ar/" hreflang="ar" lang="ar">العربية</a> · <a href="/rtl-text-fixer-site/fa/" hreflang="fa" lang="fa">فارسی</a> · <a href="/rtl-text-fixer-site/ur/" hreflang="ur" lang="ur">اردو</a> · <b>עברית</b> · <a href="/rtl-text-fixer-site/tr/" hreflang="tr" lang="tr">Türkçe</a> · <a href="/rtl-text-fixer-site/ru/" hreflang="ru" lang="ru">Русский</a> · <a href="/rtl-text-fixer-site/es/" hreflang="es" lang="es">Español</a> · <a href="/rtl-text-fixer-site/fr/" hreflang="fr" lang="fr">Français</a> · <a href="/rtl-text-fixer-site/de/" hreflang="de" lang="de">Deutsch</a> · <a href="/rtl-text-fixer-site/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="/rtl-text-fixer-site/hi/" hreflang="hi" lang="hi">हिन्दी</a></nav>
+<header>
+<img src="/rtl-text-fixer-site/img/icon-192.png" width="96" height="96" alt="RTL Text Fixer">
+<h1>עברית שנראית נכון גם בתוכנות שלא תומכות בכתיבה מימין לשמאל</h1>
+<p class="lead"><b>RTL Text Fixer</b> היא אפליקציה ל-Windows 10/11. תוכנות רבות לעריכת וידאו, מושן גרפיקס, תלת־ממד, מנועי משחק ועיצוב מציגות עברית הפוכה. הדביקו את הטקסט באפליקציה והעתיקו את התוצאה: הטקסט מסודר בסדר תצוגה, ומספרים ומילים באנגלית נשארים במקומם. או העתיקו טקסט בכל מקום, לחצו <kbd dir="ltr">Ctrl+Shift+R</kbd> והדביקו.</p>
+<p class="pending">בקרוב ב-Microsoft Store — הקישור לחנות יתווסף כאן עם הפרסום.</p>
+</header>
+<main>
+<section><h2>לפני ואחרי</h2>
+<img class="demo" src="/rtl-text-fixer-site/img/demo-he.png" loading="lazy" alt="שלום עולם – גרסה 2.0 ב-Blender">
+<img class="demo" src="/rtl-text-fixer-site/img/demo-yi.png" loading="lazy" alt="ייִדיש איז אַ שפּראַך">
+<img class="demo" src="/rtl-text-fixer-site/img/demo-ar.png" loading="lazy" alt="مرحباً بكم في Adobe Premiere Pro 2025">
+<img class="demo" src="/rtl-text-fixer-site/img/demo-fa.png" loading="lazy" alt="این متن فارسی در After Effects درست است">
+<p class="note">הדמיה של תוכנה ללא תמיכה מימין לשמאל (התווים מצוירים משמאל לימין). אדום: הטקסט כמו שהוא. ירוק: אותו טקסט אחרי RTL Text Fixer — פלט המנוע של האפליקציה.</p></section>
+<section><h2>איך זה עובד</h2><ol>
+<li>הדביקו או הקלידו טקסט. הכתב והשפה מזוהים אוטומטית.</li>
+<li>התצוגה המקדימה מראה בדיוק איך הטקסט ייראה בתוכנה ללא תמיכה מימין לשמאל. לחצו <b>העתקת התוצאה</b> והדביקו בפרויקט.</li>
+<li>בלי לפתוח את החלון: העתיקו טקסט, לחצו <kbd dir="ltr">Ctrl+Shift+R</kbd> והדביקו. לחיצה נוספת מחזירה את הטקסט המקורי.</li>
+</ol>
+<img class="shot" src="/rtl-text-fixer-site/img/shot-he.png" width="1266" height="773" loading="lazy" alt="חלון RTL Text Fixer בממשק עברי: טקסט עברי ותצוגה מקדימה של הטקסט המתוקן">
+</section>
+<section><h2>שפות נתמכות</h2><p><b>עברית ויידיש</b> — סידור מחדש בלבד (אין צורך בחיבור אותיות), ניקוד נשמר או מוסר. <b>שפות בכתב ערבי</b> — ערבית, פרסית, אורדו, כורדית, פשטו, סינדהי ואויגורית — עם חיבור אותיות. מספרים ומילים באנגלית נשארים בסדר הנכון (האלגוריתם הדו־כיווני של Unicode).</p></section>
+<section><h2>תכונות</h2><ul>
+<li>סדר תצוגה משמאל לימין עם מספרים, מילים באנגלית ופיסוק במקום הנכון</li>
+<li>היפוך סוגריים</li>
+<li>ניקוד: השארה, הסרה</li>
+<li>זיהוי אוטומטי של הכתב</li>
+<li>ריבוי שורות, היפוך סדר השורות וגלישת שורות</li>
+<li>ביטול תיקון — חזרה לטקסט רגיל</li>
+<li>קיצור מקשים ללוח (Ctrl+Shift+R) ואייקון במגש</li>
+<li>ממשק ב-12 שפות, כולל עברית מימין לשמאל</li>
+<li>עובד ללא אינטרנט, ללא חשבון, פרסומות או מעקב</li>
+</ul></section>
+<section><h2>מגבלות</h2><ul>
+<li>Windows 10 (1809 ומעלה) ו-Windows 11 בלבד.</li>
+<li>התוצאה מיועדת לתצוגה; אם התוכנה גולשת שורות ארוכות בעצמה, השורות יופיעו בסדר שגוי — השתמשו באפשרות גלישת השורות.</li>
+<li>ניקוד מוצג רק אם התוכנה והגופן תומכים בסימנים מצורפים.</li>
+</ul></section>
+<section id="faq"><h2>שאלות נפוצות</h2>
+<details open><summary><h3>למה עברית מופיעה הפוכה ב-Unity ואיך מתקנים?</h3></summary><p>רכיבי הטקסט הסטנדרטיים של Unity אינם מסדרים טקסט מימין לשמאל. העבירו את הטקסט דרך RTL Text Fixer והדביקו את התוצאה בשדה Text או TextMeshPro.</p></details>
+<details open><summary><h3>איך כותבים עברית ב-Premiere או After Effects בלי שתתהפך?</h3></summary><p>בגרסאות חדשות אפשר להפעיל את מנוע הטקסט למזרח התיכון בהגדרות. אם זה לא אפשרי בגרסה או בתבנית שלכם, המירו את הטקסט ב-RTL Text Fixer והדביקו אותו.</p></details>
+<details open><summary><h3>עברית הפוכה ב-Blender — מה עושים?</h3></summary><p>אובייקטי טקסט ב-Blender אינם מסדרים עברית. הדביקו את הטקסט שהומר ב-RTL Text Fixer.</p></details>
+<details open><summary><h3>האם מספרים ומילים באנגלית נשארים בסדר הנכון?</h3></summary><p>כן, לפי האלגוריתם הדו־כיווני של Unicode, כולל סוגריים.</p></details>
+<details open><summary><h3>האם הטקסט שלי נשלח לאנשהו?</h3></summary><p>לא. האפליקציה עובדת ללא אינטרנט ואינה שומרת את הטקסט.</p></details>
+<details open><summary><h3>איפה משיגים את האפליקציה?</h3></summary><p>RTL Text Fixer תהיה אפליקציה בתשלום ב-Microsoft Store. דף החנות עדיין לא פורסם; הקישור יתווסף כאן מיד עם הפרסום.</p></details>
+</section>
+</main>
+<footer>
+<p><a href="/rtl-text-fixer-site/privacy.html">מדיניות פרטיות</a> · תמיכה: <a href="mailto:hibari@mail.grokbot.com">hibari@mail.grokbot.com</a> · <a href="https://github.com/MurtadhaQahtan/rtl-text-fixer-app">GitHub</a></p>
+<p class="note">נתוני הכיווניות והחיבור לקוחים ממסד נתוני התווים של Unicode (גרסה 15.1).</p>
+<nav class="langs"><a href="/rtl-text-fixer-site/" hreflang="en" lang="en">English</a> · <a href="/rtl-text-fixer-site/ar/" hreflang="ar" lang="ar">العربية</a> · <a href="/rtl-text-fixer-site/fa/" hreflang="fa" lang="fa">فارسی</a> · <a href="/rtl-text-fixer-site/ur/" hreflang="ur" lang="ur">اردو</a> · <b>עברית</b> · <a href="/rtl-text-fixer-site/tr/" hreflang="tr" lang="tr">Türkçe</a> · <a href="/rtl-text-fixer-site/ru/" hreflang="ru" lang="ru">Русский</a> · <a href="/rtl-text-fixer-site/es/" hreflang="es" lang="es">Español</a> · <a href="/rtl-text-fixer-site/fr/" hreflang="fr" lang="fr">Français</a> · <a href="/rtl-text-fixer-site/de/" hreflang="de" lang="de">Deutsch</a> · <a href="/rtl-text-fixer-site/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="/rtl-text-fixer-site/hi/" hreflang="hi" lang="hi">हिन्दी</a></nav>
+</footer>
+</body>
+</html>
