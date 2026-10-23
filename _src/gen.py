@@ -6,6 +6,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from content_en import EN
 from content_rtl import AR, FA, UR, HE
 from content_ltr import TR, RU, ES, FR, DE, PT, HI
+from store_text import STORE_TEXT
 OUT = sys.argv[1] if len(sys.argv) > 1 else '.'
 ORIGIN = 'https://murtadhaqahtan.github.io'
 BASE = ORIGIN + '/rtl-text-fixer-site/'
@@ -13,13 +14,16 @@ P = '/rtl-text-fixer-site/'
 # ---------------------------------------------------------------------------------------------------------------
 # STORE PLACEHOLDER: the app is not in the Microsoft Store yet (name not reserved). When the Store ID exists, set
 # STORE_ID = '9NXXXXXXXXXX' (and PRICE if wanted) and regenerate: Store badges, "offers" and installUrl appear.
-STORE_ID = None
-PRICE = None          # e.g. '2.99' (USD) — only once the price is set in Partner Center
+STORE_ID = '9NQC161JJM09'
+PRICE = '2.99'        # USD, as set in Partner Center
 # ---------------------------------------------------------------------------------------------------------------
 STORE = f'https://apps.microsoft.com/detail/{STORE_ID}' if STORE_ID else None
 README_REPO = 'https://github.com/MurtadhaQahtan/rtl-text-fixer-app'
 TODAY = datetime.date.today().isoformat()
 LANGS = [EN, AR, FA, UR, HE, TR, RU, ES, FR, DE, PT, HI]
+if STORE_ID:  # replace the 'release pending' wording with the real Store facts
+    for _L in LANGS:
+        _L['faq'] = _L['faq'][:-1] + [(_L['faq'][-1][0], STORE_TEXT[_L['code']][0])]
 UI_LANGS = ['en', 'ar', 'fa', 'ur', 'he', 'tr', 'ru', 'es', 'fr', 'de', 'pt-BR', 'hi']
 SHOT = {'ar': 'shot-ar.png', 'he': 'shot-he.png', 'ur': 'shot-ur.png'}  # localized UI screenshots where we have them
 SAMPLES = json.load(open(os.path.join(os.path.dirname(__file__), 'samples.json'), encoding='utf-8'))
@@ -49,7 +53,8 @@ def jsonld(L):
         app["installUrl"] = app["downloadUrl"] = STORE
         app["sameAs"].append(STORE)
         if PRICE:
-            app["offers"] = {"@type": "Offer", "price": PRICE, "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": STORE}
+            app["offers"] = {"@type": "Offer", "price": PRICE, "priceCurrency": "USD", "url": STORE,
+                             "seller": {"@type": "Organization", "name": "Microsoft Store"}}
     faq = {"@type": "FAQPage", "@id": url(L) + "#faq", "inLanguage": L['hreflang'],
            "mainEntity": [{"@type": "Question", "name": strip(q), "acceptedAnswer": {"@type": "Answer", "text": strip(a)}} for q, a in L['faq']]}
     page = {"@type": "WebPage", "@id": url(L) + "#page", "url": url(L), "name": strip(L['title']),
@@ -62,7 +67,9 @@ def page(L):
     alt = '\n'.join(f'<link rel="alternate" hreflang="{x["hreflang"]}" href="{url(x)}">' for x in LANGS)
     alt += f'\n<link rel="alternate" hreflang="x-default" href="{BASE}">'
     nav = ' · '.join((f'<b>{x["native"]}</b>' if x is L else f'<a href="{P}{x["path"]}" hreflang="{x["hreflang"]}" lang="{x["hreflang"]}">{x["native"]}</a>') for x in LANGS)
-    cta = (f'<a class="badge" href="{STORE}" rel="noopener">Microsoft Store</a>' if STORE else f'<p class="pending">{e(L["store_note"])}</p>')
+    badge = {'en': 'en-us', 'pt-BR': 'pt-br'}.get(L['code'], L['code'])
+    cta = (f'<a class="badge" href="{STORE}?hl={L["hreflang"].lower()}" rel="noopener"><img src="{P}img/store-badge-{badge}.svg" height="56" alt="{e(STORE_TEXT[L["code"]][1])}"></a>'
+           if STORE else f'<p class="pending">{e(L["store_note"])}</p>')
     demos = '\n'.join(f'<img class="demo" src="{P}img/demo-{k}.png" loading="lazy" alt="{e(SAMPLES[k])}">' for k in L['demos'])
     how = '\n'.join(f'<li>{s}</li>' for s in L['how'])
     feats = '\n'.join(f'<li>{s}</li>' for s in L['features'])
